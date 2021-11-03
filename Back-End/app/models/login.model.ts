@@ -36,7 +36,7 @@ module.exports = (sequelize, Sequelize) => {
   Login.associate = models => {
     Login.belongsToMany(models.Plan, {
       through: 'LoginPlan',
-      as:'plans',
+      as: 'plans',
       foreignKey: 'id'
     })
   }

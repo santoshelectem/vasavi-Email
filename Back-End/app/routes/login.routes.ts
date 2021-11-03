@@ -13,6 +13,6 @@ module.exports = app => {
   router.get('/login', fetchAlllogins)
   router.post('/postlogin', loginCreate)
   router.delete('/deletelogin/:id', deleteLogin)
-  router.put('/updateLogin/:id', update)
+  router.put('/updatelogin/:id', update)
   app.use('/api/login', router)
 }
